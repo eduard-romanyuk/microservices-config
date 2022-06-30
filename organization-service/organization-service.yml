@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: true
+
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://postgres:5432/postgres?currentSchema=organization_service
+
+logging:
+  level:
+    com.optimagrowth.organization.service: DEBUG
