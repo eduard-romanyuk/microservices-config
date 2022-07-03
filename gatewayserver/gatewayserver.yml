@@ -9,9 +9,9 @@ spring:
             - Path=/organization/**
           filters:
             - RewritePath=/organization/(?<path>.*), /$\{path}
-        - id: licensing-service
-          uri: lb://licensing-service
-          predicates:
-            - Path=/licensing/**
-          filters:
-            - RewritePath=/licensing/(?<path>.*), /$\{path}
+#        - id: licensing-service
+#          uri: lb://licensing-service
+#          predicates:
+#            - Path=/licensing/**
+#          filters:
+#            - RewritePath=/licensing/(?<path>.*), /$\{path}
